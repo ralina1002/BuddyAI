@@ -7,9 +7,10 @@ services:
     region: frankfurt
     branch: main
     envVars:
-      - key: MONGO_URL
+      - key: OPENAI_API_KEY
         sync: false
     buildFilter:
       paths:
       - app/**
+
   
