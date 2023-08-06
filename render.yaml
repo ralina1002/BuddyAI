@@ -3,7 +3,7 @@ services:
     name: fastapi
     runtime: docker
     plan: free
-    repo: https://github.com/Salimzhann/-fastapi-chatgpt-.git
+    repo: https://github.com/ralina1002/wrapped-gpt
     region: frankfurt
     branch: main
     envVars:
