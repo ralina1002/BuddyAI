@@ -1,3 +1,5 @@
+<img src="images/screenshots.png" width="200" height="200" alt="Description of Image">
+
 # FastAPI + MongoDB Boilerplate
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/WleFVe?referralCode=UBd_g_)
