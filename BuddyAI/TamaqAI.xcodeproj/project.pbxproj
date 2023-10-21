@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E900AD3F2A714D77001C3828 /* TamaqAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900AD3E2A714D77001C3828 /* TamaqAIApp.swift */; };
+		E900AD432A714D79001C3828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E900AD422A714D79001C3828 /* Assets.xcassets */; };
+		E900AD462A714D79001C3828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E900AD452A714D79001C3828 /* Preview Assets.xcassets */; };
+		E900AD502A714D79001C3828 /* TamaqAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900AD4F2A714D79001C3828 /* TamaqAITests.swift */; };
+		E900AD5A2A714D79001C3828 /* TamaqAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900AD592A714D79001C3828 /* TamaqAIUITests.swift */; };
+		E900AD5C2A714D79001C3828 /* TamaqAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900AD5B2A714D79001C3828 /* TamaqAIUITestsLaunchTests.swift */; };
+		E900AD9F2A7294D2001C3828 /* MainView .swift in Sources */ = {isa = PBXBuildFile; fileRef = E900AD9E2A7294D2001C3828 /* MainView .swift */; };
+		E900ADA32A72950B001C3828 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900ADA22A72950B001C3828 /* PageView.swift */; };
+		E900ADA52A729531001C3828 /* AppBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = E900ADA42A729531001C3828 /* AppBody.swift */; };
+		E9398E162A7C506B00851001 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = E9398E152A7C506B00851001 /* articles.json */; };
+		E96D4C2F2A7EC15A004C6B8B /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C2E2A7EC15A004C6B8B /* ChatHelper.swift */; };
+		E96D4C312A7EC181004C6B8B /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C302A7EC181004C6B8B /* ChatScreen.swift */; };
+		E96D4C332A7EC1A7004C6B8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C322A7EC1A7004C6B8B /* Constants.swift */; };
+		E96D4C352A7EC1C0004C6B8B /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C342A7EC1C0004C6B8B /* ContentMessageView.swift */; };
+		E96D4C372A7EC1EB004C6B8B /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C362A7EC1EB004C6B8B /* KeyboardResponder.swift */; };
+		E96D4C392A7EC202004C6B8B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C382A7EC202004C6B8B /* Message.swift */; };
+		E96D4C3B2A7EC21A004C6B8B /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C3A2A7EC21A004C6B8B /* MessageView.swift */; };
+		E96D4C3D2A7EC236004C6B8B /* ResizableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C3C2A7EC236004C6B8B /* ResizableTextView.swift */; };
+		E96D4C3F2A7EC24E004C6B8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C3E2A7EC24E004C6B8B /* User.swift */; };
+		E96D4C412A7EC267004C6B8B /* ViewExtansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C402A7EC267004C6B8B /* ViewExtansion.swift */; };
+		E96D4C432A7EC281004C6B8B /* betatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C422A7EC281004C6B8B /* betatest.swift */; };
+		E96D4C452A7EF93E004C6B8B /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96D4C442A7EF93E004C6B8B /* colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E900AD4C2A714D79001C3828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E900AD332A714D77001C3828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E900AD3A2A714D77001C3828;
+			remoteInfo = TamaqAI;
+		};
+		E900AD562A714D79001C3828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E900AD332A714D77001C3828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E900AD3A2A714D77001C3828;
+			remoteInfo = TamaqAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E900AD3B2A714D77001C3828 /* TamaqAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TamaqAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900AD3E2A714D77001C3828 /* TamaqAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaqAIApp.swift; sourceTree = "<group>"; };
+		E900AD422A714D79001C3828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E900AD452A714D79001C3828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E900AD4B2A714D79001C3828 /* TamaqAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamaqAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900AD4F2A714D79001C3828 /* TamaqAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaqAITests.swift; sourceTree = "<group>"; };
+		E900AD552A714D79001C3828 /* TamaqAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TamaqAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E900AD592A714D79001C3828 /* TamaqAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaqAIUITests.swift; sourceTree = "<group>"; };
+		E900AD5B2A714D79001C3828 /* TamaqAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamaqAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E900AD9E2A7294D2001C3828 /* MainView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView .swift"; sourceTree = "<group>"; };
+		E900ADA22A72950B001C3828 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		E900ADA42A729531001C3828 /* AppBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBody.swift; sourceTree = "<group>"; };
+		E9398E152A7C506B00851001 /* articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
+		E96D4C2E2A7EC15A004C6B8B /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		E96D4C302A7EC181004C6B8B /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		E96D4C322A7EC1A7004C6B8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E96D4C342A7EC1C0004C6B8B /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		E96D4C362A7EC1EB004C6B8B /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		E96D4C382A7EC202004C6B8B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E96D4C3A2A7EC21A004C6B8B /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		E96D4C3C2A7EC236004C6B8B /* ResizableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableTextView.swift; sourceTree = "<group>"; };
+		E96D4C3E2A7EC24E004C6B8B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E96D4C402A7EC267004C6B8B /* ViewExtansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtansion.swift; sourceTree = "<group>"; };
+		E96D4C422A7EC281004C6B8B /* betatest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betatest.swift; sourceTree = "<group>"; };
+		E96D4C442A7EF93E004C6B8B /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E900AD382A714D77001C3828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E900AD482A714D79001C3828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E900AD522A714D79001C3828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E900AD322A714D77001C3828 = {
+			isa = PBXGroup;
+			children = (
+				E9398E152A7C506B00851001 /* articles.json */,
+				E900AD3D2A714D77001C3828 /* TamaqAI */,
+				E900AD4E2A714D79001C3828 /* TamaqAITests */,
+				E900AD582A714D79001C3828 /* TamaqAIUITests */,
+				E900AD3C2A714D77001C3828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E900AD3C2A714D77001C3828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E900AD3B2A714D77001C3828 /* TamaqAI.app */,
+				E900AD4B2A714D79001C3828 /* TamaqAITests.xctest */,
+				E900AD552A714D79001C3828 /* TamaqAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E900AD3D2A714D77001C3828 /* TamaqAI */ = {
+			isa = PBXGroup;
+			children = (
+				E96D4C2D2A7EC0F0004C6B8B /* ChatScreenFile */,
+				E900AD3E2A714D77001C3828 /* TamaqAIApp.swift */,
+				E900AD9E2A7294D2001C3828 /* MainView .swift */,
+				E900ADA22A72950B001C3828 /* PageView.swift */,
+				E900ADA42A729531001C3828 /* AppBody.swift */,
+				E900AD422A714D79001C3828 /* Assets.xcassets */,
+				E900AD442A714D79001C3828 /* Preview Content */,
+				E96D4C442A7EF93E004C6B8B /* colors.swift */,
+			);
+			path = TamaqAI;
+			sourceTree = "<group>";
+		};
+		E900AD442A714D79001C3828 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E900AD452A714D79001C3828 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E900AD4E2A714D79001C3828 /* TamaqAITests */ = {
+			isa = PBXGroup;
+			children = (
+				E900AD4F2A714D79001C3828 /* TamaqAITests.swift */,
+			);
+			path = TamaqAITests;
+			sourceTree = "<group>";
+		};
+		E900AD582A714D79001C3828 /* TamaqAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E900AD592A714D79001C3828 /* TamaqAIUITests.swift */,
+				E900AD5B2A714D79001C3828 /* TamaqAIUITestsLaunchTests.swift */,
+			);
+			path = TamaqAIUITests;
+			sourceTree = "<group>";
+		};
+		E96D4C2D2A7EC0F0004C6B8B /* ChatScreenFile */ = {
+			isa = PBXGroup;
+			children = (
+				E96D4C2E2A7EC15A004C6B8B /* ChatHelper.swift */,
+				E96D4C302A7EC181004C6B8B /* ChatScreen.swift */,
+				E96D4C322A7EC1A7004C6B8B /* Constants.swift */,
+				E96D4C342A7EC1C0004C6B8B /* ContentMessageView.swift */,
+				E96D4C362A7EC1EB004C6B8B /* KeyboardResponder.swift */,
+				E96D4C382A7EC202004C6B8B /* Message.swift */,
+				E96D4C3A2A7EC21A004C6B8B /* MessageView.swift */,
+				E96D4C3C2A7EC236004C6B8B /* ResizableTextView.swift */,
+				E96D4C3E2A7EC24E004C6B8B /* User.swift */,
+				E96D4C402A7EC267004C6B8B /* ViewExtansion.swift */,
+				E96D4C422A7EC281004C6B8B /* betatest.swift */,
+			);
+			path = ChatScreenFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E900AD3A2A714D77001C3828 /* TamaqAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E900AD5F2A714D79001C3828 /* Build configuration list for PBXNativeTarget "TamaqAI" */;
+			buildPhases = (
+				E900AD372A714D77001C3828 /* Sources */,
+				E900AD382A714D77001C3828 /* Frameworks */,
+				E900AD392A714D77001C3828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TamaqAI;
+			productName = TamaqAI;
+			productReference = E900AD3B2A714D77001C3828 /* TamaqAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E900AD4A2A714D79001C3828 /* TamaqAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E900AD622A714D79001C3828 /* Build configuration list for PBXNativeTarget "TamaqAITests" */;
+			buildPhases = (
+				E900AD472A714D79001C3828 /* Sources */,
+				E900AD482A714D79001C3828 /* Frameworks */,
+				E900AD492A714D79001C3828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E900AD4D2A714D79001C3828 /* PBXTargetDependency */,
+			);
+			name = TamaqAITests;
+			productName = TamaqAITests;
+			productReference = E900AD4B2A714D79001C3828 /* TamaqAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E900AD542A714D79001C3828 /* TamaqAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E900AD652A714D79001C3828 /* Build configuration list for PBXNativeTarget "TamaqAIUITests" */;
+			buildPhases = (
+				E900AD512A714D79001C3828 /* Sources */,
+				E900AD522A714D79001C3828 /* Frameworks */,
+				E900AD532A714D79001C3828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E900AD572A714D79001C3828 /* PBXTargetDependency */,
+			);
+			name = TamaqAIUITests;
+			productName = TamaqAIUITests;
+			productReference = E900AD552A714D79001C3828 /* TamaqAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E900AD332A714D77001C3828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E900AD3A2A714D77001C3828 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E900AD4A2A714D79001C3828 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E900AD3A2A714D77001C3828;
+					};
+					E900AD542A714D79001C3828 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E900AD3A2A714D77001C3828;
+					};
+				};
+			};
+			buildConfigurationList = E900AD362A714D77001C3828 /* Build configuration list for PBXProject "TamaqAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E900AD322A714D77001C3828;
+			productRefGroup = E900AD3C2A714D77001C3828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E900AD3A2A714D77001C3828 /* TamaqAI */,
+				E900AD4A2A714D79001C3828 /* TamaqAITests */,
+				E900AD542A714D79001C3828 /* TamaqAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E900AD392A714D77001C3828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E900AD462A714D79001C3828 /* Preview Assets.xcassets in Resources */,
+				E9398E162A7C506B00851001 /* articles.json in Resources */,
+				E900AD432A714D79001C3828 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E900AD492A714D79001C3828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E900AD532A714D79001C3828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E900AD372A714D77001C3828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96D4C352A7EC1C0004C6B8B /* ContentMessageView.swift in Sources */,
+				E900ADA32A72950B001C3828 /* PageView.swift in Sources */,
+				E96D4C3F2A7EC24E004C6B8B /* User.swift in Sources */,
+				E96D4C2F2A7EC15A004C6B8B /* ChatHelper.swift in Sources */,
+				E96D4C372A7EC1EB004C6B8B /* KeyboardResponder.swift in Sources */,
+				E96D4C452A7EF93E004C6B8B /* colors.swift in Sources */,
+				E96D4C432A7EC281004C6B8B /* betatest.swift in Sources */,
+				E900ADA52A729531001C3828 /* AppBody.swift in Sources */,
+				E96D4C332A7EC1A7004C6B8B /* Constants.swift in Sources */,
+				E900AD3F2A714D77001C3828 /* TamaqAIApp.swift in Sources */,
+				E96D4C392A7EC202004C6B8B /* Message.swift in Sources */,
+				E900AD9F2A7294D2001C3828 /* MainView .swift in Sources */,
+				E96D4C312A7EC181004C6B8B /* ChatScreen.swift in Sources */,
+				E96D4C412A7EC267004C6B8B /* ViewExtansion.swift in Sources */,
+				E96D4C3B2A7EC21A004C6B8B /* MessageView.swift in Sources */,
+				E96D4C3D2A7EC236004C6B8B /* ResizableTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E900AD472A714D79001C3828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E900AD502A714D79001C3828 /* TamaqAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E900AD512A714D79001C3828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E900AD5A2A714D79001C3828 /* TamaqAIUITests.swift in Sources */,
+				E900AD5C2A714D79001C3828 /* TamaqAIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E900AD4D2A714D79001C3828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E900AD3A2A714D77001C3828 /* TamaqAI */;
+			targetProxy = E900AD4C2A714D79001C3828 /* PBXContainerItemProxy */;
+		};
+		E900AD572A714D79001C3828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E900AD3A2A714D77001C3828 /* TamaqAI */;
+			targetProxy = E900AD562A714D79001C3828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E900AD5D2A714D79001C3828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E900AD5E2A714D79001C3828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E900AD602A714D79001C3828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TamaqAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 7296YY79C9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ralinatashenova.TamaqAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E900AD612A714D79001C3828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TamaqAI/Preview Content\"";
+				DEVELOPMENT_TEAM = 7296YY79C9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ralinatashenova.TamaqAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E900AD632A714D79001C3828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7296YY79C9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ralinatashenova.TamaqAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TamaqAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TamaqAI";
+			};
+			name = Debug;
+		};
+		E900AD642A714D79001C3828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7296YY79C9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ralinatashenova.TamaqAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TamaqAI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TamaqAI";
+			};
+			name = Release;
+		};
+		E900AD662A714D79001C3828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7296YY79C9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ralinatashenova.TamaqAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TamaqAI;
+			};
+			name = Debug;
+		};
+		E900AD672A714D79001C3828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7296YY79C9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ralinatashenova.TamaqAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TamaqAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E900AD362A714D77001C3828 /* Build configuration list for PBXProject "TamaqAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E900AD5D2A714D79001C3828 /* Debug */,
+				E900AD5E2A714D79001C3828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E900AD5F2A714D79001C3828 /* Build configuration list for PBXNativeTarget "TamaqAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E900AD602A714D79001C3828 /* Debug */,
+				E900AD612A714D79001C3828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E900AD622A714D79001C3828 /* Build configuration list for PBXNativeTarget "TamaqAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E900AD632A714D79001C3828 /* Debug */,
+				E900AD642A714D79001C3828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E900AD652A714D79001C3828 /* Build configuration list for PBXNativeTarget "TamaqAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E900AD662A714D79001C3828 /* Debug */,
+				E900AD672A714D79001C3828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E900AD332A714D77001C3828 /* Project object */;
+}
