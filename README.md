@@ -1,4 +1,4 @@
-<img src="images/screenshots.png" width="600" height="500" alt="Description of Image">
+<img src="images/screenshots.png" width="600" height="400" alt="Description of Image">
 
 # FastAPI + MongoDB Boilerplate
 
